@@ -15,4 +15,26 @@ let userEmail1 = undefined
 const id = Symbol('123')
 const anotherId = Symbol('123')
 console.log(id === anotherId);
- 
+
+const binNumber = 5848843155316341434n
+console.log(binNumber);
+
+ // Non Primitive
+
+ const heroes = ["Shaktiman", "nagraj", "doga"]
+ let myObj=  {
+    name: " Saurabh",
+    age : 22
+ }
+
+ const myFunction = function(){
+    console.log("Hello World");
+    
+ }
+ const nulla = null
+ console.log(typeof heroes);
+ console.log(typeof nulla)
+
+ console.log(typeof myFunction);// Object function
+
+ console.log(typeof id);
