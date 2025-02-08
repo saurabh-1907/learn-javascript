@@ -31,3 +31,31 @@ function loginUserMessage(username = "sam"){
 }
 console.log(loginUserMessage("Saurabh"));
 
+function calculateCartPrice(val1, val2, ...num1){ // rest operator will get array
+    return num1
+}
+
+console.log(calculateCartPrice(200, 400, 500));
+
+const user = {
+    username : "Saurabh",
+    price : 199
+}
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+handleObject(user) // type safety check karni hai
+
+// direct object bhi pass kar sakte the
+
+handleObject({
+    username: "tasbeeha",
+    price: 399
+})
+
+myNewArray = [ 200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+console.log(returnSecondValue(myNewArray));
