@@ -33,3 +33,22 @@ const myObject = {
 //     console.log(key, ': - ', value);
 // }  not iteratable objects but for of dont work
 
+const mycoding = [
+    {
+        languageName : "JavaScript",
+        languageFileName : "Js"
+    }
+    ,
+    {
+        languageName : "java",
+        languageFileName : "java"
+    },
+    {
+        languageName : "python",
+        languageFileName : "py"
+    }
+]
+
+mycoding.forEach((item) => {
+    console.log(item.languageFileName);
+})
