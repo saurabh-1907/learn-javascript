@@ -11,17 +11,31 @@
     <button id = "start">Start</button>
 </body>
 <script>
-let setInt; 
+    let setInt; 
 
-document.getElementById('start').addEventListener('click', function () {
-    setInt = setInterval(function () {
-        console.log("Saurabh", new Date().toLocaleString()); // Corrected Date format
-    }, 1000);
-});
+    document.getElementById('start').addEventListener('click', function () {
+        setInt = setInterval(function () {
+            console.log("Saurabh", new Date().toLocaleString()); // Corrected Date format
+        }, 1000);
+    });
 
-document.getElementById('stop').addEventListener('click', function () {
-    clearInterval(setInt); // Now accessible
-});
+    document.getElementById('stop').addEventListener('click', function () {
+        clearInterval(setInt); // Now accessible
+    });
+
+    let setColor;
+
+    document.getElementById('start').addEventListener('click', function () {
+        setInt = setInterval(function () {
+            document.getElementById
+        }, 1000);
+    });
+
+    document.getElementById('stop').addEventListener('click', function () {
+        clearInterval(setInt); // Now accessible
+    });
+
+
 
 </script>
 </html>
