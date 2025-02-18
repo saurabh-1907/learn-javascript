@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<body>
+    <div id="idCard" style="width: 100px; height: 100px; left: 20px; top: 50px; background-color: black; color: antiquewhite;">
+    </div>
+</body>
+<script>
+    async function loadImages() {
+        let url;
+        for (let i = 0; i < 60; i++) {
+            url = `https://randomuser.me/api/portraits/women/${i}.jpg`;
+
+            document.getElementById("idCard").innerHTML = `
+                <img src="${url}" alt="User Picture" width="100" height="100">
+            `;
+
+            // Wait for 1 second before changing the image
+            await new Promise(resolve => setTimeout(resolve, 1000));
+        }
+    }
+
+    loadImages();
+</script>
+</html>
