@@ -29,3 +29,6 @@ const masalaChai = new User("MasalaChai");
 masalaChai.logMe();
 
 
+console.log(chai instanceof User);
+
+
