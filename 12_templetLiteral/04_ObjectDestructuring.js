@@ -13,5 +13,7 @@ const students = {
 };
 
 const {firstname, lastname, course, social} = students
-
+//const {firstname : fname = 'shaurya'(agar koi datapoint nahi aaya toh default value use karega), lastname : lname, course, social} = students object name apne according karne ke liye
 console.log(firstname, lastname, course, social.twitter, social.facebook);
+
+
